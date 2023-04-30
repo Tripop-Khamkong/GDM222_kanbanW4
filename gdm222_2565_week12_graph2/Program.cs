@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class Program {
     static void Main(string[] args) {
-        Console.Write(" Input (0<=i<n) or a negative integer to stop a progarm ");
+        Console.WriteLine("Input (0<=i<n) or a negative integer to stop a progarm ");
         Console.Write("Input the number of nodes in the graph (n): ");
         int n = int.Parse(Console.ReadLine());
 
@@ -14,13 +14,13 @@ class Program {
         }
         
         while (true) {
-            Console.Write("Input the order of the source node : ");
+            Console.Write("Input source node : ");
             int i = int.Parse(Console.ReadLine());
             if (i < 0 || i >= n) {
                 break;
             }
 
-            Console.Write("Input the order of the destination node : ");
+            Console.Write("Input destination node : ");
             int j = int.Parse(Console.ReadLine());
             if (j < 0 || j >= n || j == i) {
                 break;
